@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalSounds" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-V2-YyV">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ws-jM-1Yh">
+                                <rect key="frame" x="225" y="44" width="112" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="crj-am-XSR"/>
+                                    <constraint firstAttribute="height" constant="140" id="enZ-G2-eCI"/>
+                                </constraints>
+                                <state key="normal" image="sheep.png"/>
+                                <connections>
+                                    <action selector="wineTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgJ-3M-q6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4Q-d6-eSd">
+                                <rect key="frame" x="354" y="115" width="165" height="183"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="JLb-mf-6X0"/>
+                                    <constraint firstAttribute="height" constant="183" id="rmR-Q8-rTj"/>
+                                </constraints>
+                                <state key="normal" image="dog.png"/>
+                                <connections>
+                                    <action selector="wineTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yba-8I-KdP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U3-Mk-dMa">
+                                <rect key="frame" x="217" y="207" width="129" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="9jo-86-lQr"/>
+                                    <constraint firstAttribute="height" constant="160" id="gH0-ad-qdG"/>
+                                </constraints>
+                                <state key="normal" image="chicken.png"/>
+                                <connections>
+                                    <action selector="wineTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cva-fZ-ihD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nR-aX-WV1">
+                                <rect key="frame" x="523" y="187" width="160" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="bfe-aQ-LPZ"/>
+                                    <constraint firstAttribute="height" constant="190" id="szv-vt-d7b"/>
+                                </constraints>
+                                <state key="normal" image="lion.png"/>
+                                <connections>
+                                    <action selector="wineTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhI-4w-B6A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa6-8m-ro2">
+                                <rect key="frame" x="527" y="44" width="167" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="0qg-3H-Izu"/>
+                                    <constraint firstAttribute="height" constant="170" id="T72-Pc-TpA"/>
+                                </constraints>
+                                <state key="normal" image="elephant.png"/>
+                                <connections>
+                                    <action selector="wineTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QjY-jn-qlD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8nR-aX-WV1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="75" id="1u9-BM-jDs"/>
+                            <constraint firstItem="pa6-8m-ro2" firstAttribute="centerX" secondItem="mps-nX-o3y" secondAttribute="centerX" constant="162.5" id="3MO-LB-jjv"/>
+                            <constraint firstItem="8nR-aX-WV1" firstAttribute="centerX" secondItem="mps-nX-o3y" secondAttribute="centerX" constant="155" id="58M-Yz-bSU"/>
+                            <constraint firstAttribute="trailing" secondItem="Ta3-V2-YyV" secondAttribute="trailing" id="5Wh-b9-pDC"/>
+                            <constraint firstItem="8Ws-jM-1Yh" firstAttribute="centerX" secondItem="mps-nX-o3y" secondAttribute="centerX" constant="-167" id="8eF-vY-D26"/>
+                            <constraint firstAttribute="bottom" secondItem="Ta3-V2-YyV" secondAttribute="bottom" id="GCJ-Kv-JtN"/>
+                            <constraint firstItem="Ta3-V2-YyV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Phy-LC-2ar"/>
+                            <constraint firstItem="Ta3-V2-YyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Q6D-kg-qx2"/>
+                            <constraint firstItem="8Ws-jM-1Yh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-93" id="QiY-fX-csJ"/>
+                            <constraint firstItem="pa6-8m-ro2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-78" id="U81-DZ-ZlI"/>
+                            <constraint firstItem="5U3-Mk-dMa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="80" id="Ykf-k5-pxK"/>
+                            <constraint firstItem="5U3-Mk-dMa" firstAttribute="centerX" secondItem="mps-nX-o3y" secondAttribute="centerX" constant="-166.5" id="jWh-Ga-OLm"/>
+                            <constraint firstItem="y4Q-d6-eSd" firstAttribute="centerX" secondItem="mps-nX-o3y" secondAttribute="centerX" constant="-11.5" id="jd7-Ld-Ngm"/>
+                            <constraint firstItem="y4Q-d6-eSd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-0.5" id="x33-GL-KB9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mps-nX-o3y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="292"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="2496" height="1596"/>
+        <image name="chicken.png" width="300" height="360"/>
+        <image name="dog.png" width="300" height="279"/>
+        <image name="elephant.png" width="300" height="298"/>
+        <image name="lion.png" width="300" height="285"/>
+        <image name="sheep.png" width="300" height="389"/>
+    </resources>
+</document>
