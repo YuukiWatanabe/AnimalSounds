@@ -1,3 +1,5 @@
+*.xcuserstate
+
 # Xcode (from gitignore.io)
 build/
 *.pbxuser
